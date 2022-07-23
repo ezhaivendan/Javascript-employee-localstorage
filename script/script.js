@@ -19,12 +19,9 @@ let submitDetails = () => {
     
     console.log(`infoooooooooo`,info)
     let empInfo1 = JSON.parse(localStorage.getItem('empInfo1')) || [];
-    console.log(`empinfo before push`, empInfo1)
     empInfo1.push(info);
-    console.log(`empinfo after push`, empInfo1)
     empInfo1.forEach((arr, index) => arr.id = index + 1000);
     localStorage.setItem('empInfo1', JSON.stringify(empInfo1));
-    console.log(empInfo1)
 };
   
 showResult = () => JSON.parse(localStorage.getItem('empInfo1'));
@@ -46,6 +43,7 @@ displayBlockResultContainer(arg) {
     }
 }
 showEmp() {
+    console.log('*****', this.empInfo1);
     this.displayBlockResultContainer(showDetails);
     let headers = Object.keys(this.empInfo1[0]);
     let lessSalary = this.empInfo1.filter(emp => emp.salary < 18000)
