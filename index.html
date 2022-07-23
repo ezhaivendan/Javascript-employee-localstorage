@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <title>Untitled - 633504</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+        <div class="form-control">
+            <input type="text" id="empName" placeholder="Name">
+            <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+            <input type="date" id="birthDay" placeholder="DOB">
+        </div>
+
+        <div class="form-control">
+            <select id="bloodGroup">
+                <option value="">A +ve</option>
+                <option value="">A -ve</option>
+                <option value="">B +ve</option>
+                <option value="">B -ve</option>
+                <option value="">AB +ve</option>
+                <option value="">AB -ve</option>
+                <option value="">O +ve</option>
+                <option value="">O -ve</option>
+            </select>
+        </div>
+
+        <div class="form-control">
+            <input type="text" id="street" placeholder="Street">
+        </div>
+
+        <div class="form-control">
+            <input type="text" id="district" placeholder="District">
+        </div>
+
+        <div class="form-control">
+            <input type="text" id="mobileNo" placeholder="Mobile No.">
+        </div>
+        
+        <div class="form-control">
+            <input type="text" id="dept" placeholder="Department">
+        </div>
+
+        <div class="form-control">
+            <input type="text" id="salary" placeholder="Salary">
+        </div>
+    
+        <button onclick="submitDetails()">Submit</button>
+        <button onclick="showResult()">Show Result</button>
+        <button onclick="getEmpDetails.showEmp()">Get Result from Class</button>
+        
+        <div id="showDetails" class="hide">
+            <div id="empRes"> </div>
+        </div>
+    
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
