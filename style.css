@@ -1,0 +1,54 @@
+body {
+    background: white;
+    color: #323232;
+    font-weight: 300;
+    height: 100vh;
+    margin: 30px;
+    font-family: Helvetica neue, roboto;
+  }
+  
+  div {
+    margin: 15px 0;
+  }
+  
+  input, select, date {
+    min-width: 250px;
+    height: 30px;
+  }
+  
+  button {
+    height: 30px;
+  }
+  
+  .form-control small {
+      color: var(--error-color);
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      visibility: hidden;
+  }
+  
+  table {
+    border: 1px solid #333;
+    width: 750px;
+    margin-bottom: 20px;
+  }
+  
+  th {
+    text-align: left;
+    border-bottom: 1px solid;
+    padding: 5px;
+    text-transform: capitalize;
+  }
+  
+  td {
+    padding: 5px;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .show {
+    display: block;
+  }
